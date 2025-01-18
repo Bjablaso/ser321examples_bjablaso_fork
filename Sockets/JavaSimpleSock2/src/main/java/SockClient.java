@@ -14,7 +14,7 @@ import java.io.*;
 class SockClient {
   public static void main (String args[]) {
     Socket sock = null;
-    String host = "localhost";
+    String host = "51.20.144.68";
     String message = "HI";
     Integer number = 100;
 
