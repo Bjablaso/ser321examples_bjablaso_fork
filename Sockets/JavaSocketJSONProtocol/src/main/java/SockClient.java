@@ -18,7 +18,7 @@ import org.json.*;
 class SockClient {
   public static void main(String args[]) {
     Socket sock = null;
-    String host = "localhost";
+    String host = "51.20.144.68";
     String message = "";
     Integer number = 0;
     Scanner scanner = new Scanner(System.in);
