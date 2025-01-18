@@ -39,13 +39,26 @@ public class Fraction {
 
    public static void main (String args[]) {
       try {
+
+         if(args.length != 2){
+            System.out.println("Error: Wrong number of arguments");
+            return;
+         }
+         int numerator = Integer.parseInt(args[0]);
+         int denominator = Integer.parseInt(args[1]);
+
+         if (denominator == 0) {
+            System.out.println("Error: Denominator cannot be zero.");
+            return;
+         }
+
          // create a new instance
          // Fraction *frac = [[Fraction alloc] init];
          Fraction frac = new Fraction();
 
          // set the values
-         frac.setNumerator(1);
-         frac.setDenominator(3);
+         frac.setNumerator(numerator);
+         frac.setDenominator(denominator);
 
          // print it
          System.out.print("The fraction is: ");

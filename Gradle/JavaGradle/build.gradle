@@ -65,3 +65,22 @@ task runFraction(type: JavaExec) {
 // dependencies{
 //   implementation 'org.json:json:20171018'
 // }
+
+tasks.register('runFrac', JavaExec){
+  group = 'application'
+  description = 'Run the Fraction program with numerator and denominator arguments.'
+
+  mainClass.set('Fraction')
+
+  def numerator = project.hasProperty('num') ? project.num : '1' // Default to 1 if not provided
+  def denominator = project.hasProperty('denom') ? project.denom : '1' // Default to 1 if not provided
+
+  if (denominator == '0') {
+    throw new GradleException("Denominator cannot be zero.")
+  }
+
+  args numerator, denominator // Pass arguments to the Java application
+
+  classpath = sourceSets.main.runtimeClasspath // Set the classpath for the JavaExec task
+
+}
