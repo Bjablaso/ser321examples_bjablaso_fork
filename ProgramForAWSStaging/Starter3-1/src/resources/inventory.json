@@ -1,0 +1,36 @@
+{
+  "inventory": [
+    {
+      "item": "Apple",
+      "quantity": 50
+    },
+    {
+      "item": "Banana",
+      "quantity": 30
+    },
+    {
+      "item": "Orange",
+      "quantity": 40
+    },
+    {
+      "item": "Milk",
+      "quantity": 20
+    },
+    {
+      "item": "Bread",
+      "quantity": 15
+    },
+    {
+      "item": "Eggs",
+      "quantity": 60
+    },
+    {
+      "item": "Rice",
+      "quantity": 25
+    },
+    {
+      "item": "Sugar",
+      "quantity": 10
+    }
+  ]
+}
